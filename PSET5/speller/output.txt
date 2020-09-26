@@ -1,0 +1,1120 @@
+==20737== Memcheck, a memory error detector
+==20737== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20737== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==20737== Command: ./speller dictionaries/testDict texts/test
+==20737== 
+
+MISSPELLED WORDS
+
+apple
+orange
+
+WORDS MISSPELLED:     2
+WORDS IN DICTIONARY:  2
+WORDS IN TEXT:        4
+TIME IN load:         0.02
+TIME IN check:        0.00
+TIME IN size:         0.00
+TIME IN unload:       0.00
+TIME IN TOTAL:        0.02
+
+==20737== Invalid read of size 4
+==20737==    at 0x52692DA: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52692E8: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb060 is 32 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52692EC: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb068 is 40 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269260: _IO_flush_all_lockp (genops.c:758)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0a8 is 104 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52694E7: _IO_unbuffer_all (genops.c:855)
+==20737==    by 0x52694E7: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52694F0: _IO_unbuffer_all (genops.c:857)
+==20737==    by 0x52694F0: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52694FA: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x52694FA: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0c8 is 136 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269506: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x5269506: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb128 is 232 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x5269526: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x5269526: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb120 is 224 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269719: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x5269719: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0c8 is 136 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5269720: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x5269720: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb128 is 232 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x5269724: _IO_unbuffer_all (genops.c:863)
+==20737==    by 0x5269724: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb124 is 228 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52696A0: _IO_unbuffer_all (genops.c:871)
+==20737==    by 0x52696A0: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x52696AD: _IO_unbuffer_all (genops.c:873)
+==20737==    by 0x52696AD: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52696BD: _IO_unbuffer_all (genops.c:875)
+==20737==    by 0x52696BD: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0e8 is 168 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52696C4: _IO_unbuffer_all (genops.c:877)
+==20737==    by 0x52696C4: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb078 is 56 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52696C8: _IO_unbuffer_all (genops.c:877)
+==20737==    by 0x52696C8: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0f0 is 176 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269553: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269553: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb118 is 216 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5268881: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb118 is 216 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52646D9: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:812)
+==20737==    by 0x52688A1: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb068 is 40 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52646DD: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:812)
+==20737==    by 0x52688A1: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb060 is 32 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x526471C: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:814)
+==20737==    by 0x52688A1: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb048 is 8 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5264720: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:815)
+==20737==    by 0x52688A1: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb050 is 16 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5264765: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:830)
+==20737==    by 0x52688A1: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0d0 is 144 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52688AB: _IO_default_setbuf (genops.c:480)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52688B0: _IO_default_setbuf (genops.c:482)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb078 is 56 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x526892D: _IO_default_setbuf (genops.c:484)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x526893F: _IO_setb (genops.c:350)
+==20737==    by 0x526893F: _IO_default_setbuf (genops.c:485)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb078 is 56 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5268943: _IO_setb (genops.c:351)
+==20737==    by 0x5268943: _IO_default_setbuf (genops.c:485)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb080 is 64 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x5268947: _IO_setb (genops.c:355)
+==20737==    by 0x5268947: _IO_default_setbuf (genops.c:485)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52688DF: _IO_default_setbuf (genops.c:492)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb070 is 48 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52688E7: _IO_default_setbuf (genops.c:492)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb068 is 40 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52688F2: _IO_default_setbuf (genops.c:492)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb060 is 32 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52688FA: _IO_default_setbuf (genops.c:493)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb050 is 16 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5268902: _IO_default_setbuf (genops.c:493)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb048 is 8 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x526890A: _IO_default_setbuf (genops.c:493)
+==20737==    by 0x5264858: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb058 is 24 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x526485E: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:394)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb078 is 56 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5264862: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:394)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb070 is 48 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5264866: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:393)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb068 is 40 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x526486A: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:393)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb060 is 32 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x526486E: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb058 is 24 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5264872: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb048 is 8 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x5264876: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==20737==    by 0x5269572: _IO_unbuffer_all (genops.c:880)
+==20737==    by 0x5269572: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb050 is 16 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x5269573: _IO_unbuffer_all (genops.c:882)
+==20737==    by 0x5269573: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269595: _IO_unbuffer_all (genops.c:886)
+==20737==    by 0x5269595: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0c8 is 136 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52695A5: _IO_unbuffer_all (genops.c:887)
+==20737==    by 0x52695A5: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb124 is 228 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 8
+==20737==    at 0x52695AF: _IO_unbuffer_all (genops.c:887)
+==20737==    by 0x52695AF: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb128 is 232 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52695C7: _IO_unbuffer_all (genops.c:887)
+==20737==    by 0x52695C7: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb120 is 224 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x52694D0: _IO_unbuffer_all (genops.c:893)
+==20737==    by 0x52694D0: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52694DA: _IO_unbuffer_all (genops.c:853)
+==20737==    by 0x52694DA: _IO_cleanup (genops.c:930)
+==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0a8 is 104 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52692DA: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52692E8: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb060 is 32 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52692EC: _IO_flush_all_lockp (genops.c:764)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb068 is 40 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5269260: _IO_flush_all_lockp (genops.c:758)
+==20737==    by 0x5269404: _IO_cleanup (genops.c:921)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0a8 is 104 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 4
+==20737==    at 0x52694E7: _IO_unbuffer_all (genops.c:855)
+==20737==    by 0x52694E7: _IO_cleanup (genops.c:930)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb040 is 0 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid write of size 4
+==20737==    at 0x52694D0: _IO_unbuffer_all (genops.c:893)
+==20737==    by 0x52694D0: _IO_cleanup (genops.c:930)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb100 is 192 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x52694DA: _IO_unbuffer_all (genops.c:853)
+==20737==    by 0x52694DA: _IO_cleanup (genops.c:930)
+==20737==    by 0x5374787: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0a8 is 104 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5374718: buffer_free (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x53747B1: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0f0 is 176 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== Invalid read of size 8
+==20737==    at 0x5374724: buffer_free (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x53747B1: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==20737==    by 0x4A2A671: _vgnU_freeres (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+==20737==    by 0x521D111: __run_exit_handlers (exit.c:132)
+==20737==    by 0x521D139: exit (exit.c:139)
+==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)
+==20737==  Address 0x55cb0e8 is 168 bytes inside a block of size 552 free'd
+==20737==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40130A: load (dictionary.c:129)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737==  Block was alloc'd at
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x5258E49: __fopen_internal (iofopen.c:65)
+==20737==    by 0x5258E49: fopen@@GLIBC_2.2.5 (iofopen.c:89)
+==20737==    by 0x4011F1: load (dictionary.c:83)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== 
+==20737== HEAP SUMMARY:
+==20737==     in use at exit: 56 bytes in 1 blocks
+==20737==   total heap usage: 7 allocs, 6 frees, 10,432 bytes allocated
+==20737== 
+==20737== 56 bytes in 1 blocks are still reachable in loss record 1 of 1
+==20737==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20737==    by 0x40122F: load (dictionary.c:97)
+==20737==    by 0x4009B4: main (speller.c:40)
+==20737== 
+==20737== LEAK SUMMARY:
+==20737==    definitely lost: 0 bytes in 0 blocks
+==20737==    indirectly lost: 0 bytes in 0 blocks
+==20737==      possibly lost: 0 bytes in 0 blocks
+==20737==    still reachable: 56 bytes in 1 blocks
+==20737==         suppressed: 0 bytes in 0 blocks
+==20737== 
+==20737== For counts of detected and suppressed errors, rerun with: -v
+==20737== ERROR SUMMARY: 62 errors from 59 contexts (suppressed: 0 from 0)
+[33m
+Asking for help...
+[0m
+[43m[30m==20737== Invalid read of size 4[0m
+[43m[30m==20737==    at 0x52692DA: _IO_flush_all_lockp (genops.c:764)[0m
+[43m[30m==20737==    by 0x5269404: _IO_cleanup (genops.c:921)[0m
+[43m[30m==20737==    by 0x521D101: __run_exit_handlers (exit.c:130)[0m
+[43m[30m==20737==    by 0x521D139: exit (exit.c:139)[0m
+[43m[30m==20737==    by 0x51FBB9D: (below main) (libc-start.c:344)[0m
+
+[33mLooks like you're trying to access 4 bytes of memory that isn't yours? Did you try to index into an array beyond its bounds? Take a closer look at line 764 of [1mgenops.c[22m.[0m

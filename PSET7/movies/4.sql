@@ -1,0 +1,1 @@
+select COUNT(rating) from ratings WHERE rating = 10

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Summary{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>CASH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>${{cash}}</td>
+        </tr>
+
+        {% for transaction in index %}
+                <td>{{ transaction['symbol'] }}</td>
+                <td>{{ transaction['name'] }}</td>
+                <td>{{ transaction['shares'] }}</td>
+                <td>${{ transaction['price'] }}</td>
+                <td>${{ transaction['total'] }}</td>
+            <tr>
+        {% endfor %}
+        </tr>
+
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>${{ total }}</b></td>
+        </tr>
+    </table>
+
+
+{% endblock %}
